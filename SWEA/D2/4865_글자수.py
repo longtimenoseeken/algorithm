@@ -1,17 +1,13 @@
 # 글자 수
 
-from collections import Counter
-
 for tc in range(1, int(input()) + 1):
     str1 = set(input())
     str2 = input()
 
-    check = []
+    ans = 0
 
-    for character in str2:
-        if character in str1:
-            check.append(character)
+    for character in str1:
+        cnt = str2.count(character)
+        ans = max(ans, cnt)
 
-    counting = Counter(check).most_common()
-
-    print(f'#{tc} {counting[0][1]}')
+    print(f'#{tc} {ans}')
