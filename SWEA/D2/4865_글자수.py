@@ -1,4 +1,4 @@
-# 글자 수
+# 4865_글자 수
 
 for tc in range(1, int(input()) + 1):
     str1 = set(input())
