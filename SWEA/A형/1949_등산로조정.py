@@ -1,4 +1,4 @@
-# 등산로 조성
+# 1949_등산로 조성
 
 dr = [-1, 1, 0, 0]
 dc = [0, 0, -1, 1]
@@ -12,7 +12,7 @@ def dfs(r, c, cnt, construction):
     # 사방 탐색
     for i in range(4):
         nr, nc = r + dr[i], c + dc[i]
-        # 맵 벗어나거나 visited에 있으면 continue
+        # 맵 벗어나거나 visited에 있으면 넘어감
         if nr < 0 or nr >= N or nc < 0 or nc >= N or (nr, nc) in visited:
             continue
         # 이동할 수 있으면 visited 넣고 다음으로 이동(나올 때 visited에서 pop)
